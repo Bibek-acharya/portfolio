@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+    Design &amp; Development of Intrusion Detection System (Thesis) | Network Simulation Tools    </title>
+    <link href="https://networksimulationtools.com/wp-content/themes/network-simulation-tools/images/favicon.png" rel="icon" type="image/png">
+    <title>Network Simulation Tools</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v24.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="How to design Intrusion Detection System Thesis for detecting internal threats in 6LowPAN? Adding an Intrusion layer in network architecture provides better network security.">
+	<link rel="canonical" href="https://networksimulationtools.com/intrusion-detection-system-projects/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Design &amp; Development of Intrusion Detection System (Thesis)">
+	<meta property="og:description" content="How to design Intrusion Detection System Thesis for detecting internal threats in 6LowPAN? Adding an Intrusion layer in network architecture provides better network security.">
+	<meta property="og:url" content="https://networksimulationtools.com/intrusion-detection-system-projects/">
+	<meta property="og:site_name" content="Network Simulation Tools">
+	<meta property="article:modified_time" content="2021-03-03T13:00:18+00:00">
+	<meta property="og:image" content="https://networksimulationtools.com/wp-content/uploads/2020/12/Intrusion-Detection-System-Projects.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="3 minutes">
+	<script type="text/javascript" async="" charset="utf-8" src="ids_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-R2p1xdGKcSzm/oeFxRBmUuFAKdZRdY7u+SIsHBFbhXYxXlZ0TQJejBaVuyPwEVKn"></script><script async="" src="ids_files/google-analytics_analytics_003.js"></script><script async="" src="ids_files/google-analytics_analytics_002.js"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://networksimulationtools.com/intrusion-detection-system-projects/","url":"https://networksimulationtools.com/intrusion-detection-system-projects/","name":"Design & Development of Intrusion Detection System (Thesis)","isPartOf":{"@id":"https://networksimulationtools.com/#website"},"primaryImageOfPage":{"@id":"https://networksimulationtools.com/intrusion-detection-system-projects/#primaryimage"},"image":{"@id":"https://networksimulationtools.com/intrusion-detection-system-projects/#primaryimage"},"thumbnailUrl":"https://networksimulationtools.com/wp-content/uploads/2020/12/Intrusion-Detection-System-Projects.png","datePublished":"2020-12-16T11:33:26+00:00","dateModified":"2021-03-03T13:00:18+00:00","description":"How to design Intrusion Detection System Thesis for detecting internal threats in 6LowPAN? Adding an Intrusion layer in network architecture provides better network security.","breadcrumb":{"@id":"https://networksimulationtools.com/intrusion-detection-system-projects/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://networksimulationtools.com/intrusion-detection-system-projects/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://networksimulationtools.com/intrusion-detection-system-projects/#primaryimage","url":"https://networksimulationtools.com/wp-content/uploads/2020/12/Intrusion-Detection-System-Projects.png","contentUrl":"https://networksimulationtools.com/wp-content/uploads/2020/12/Intrusion-Detection-System-Projects.png","width":720,"height":425},{"@type":"BreadcrumbList","@id":"https://networksimulationtools.com/intrusion-detection-system-projects/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://networksimulationtools.com/"},{"@type":"ListItem","position":2,"name":"Intrusion Detection System Projects"}]},{"@type":"WebSite","@id":"https://networksimulationtools.com/#website","url":"https://networksimulationtools.com/","name":"Network Simulation Tools","description":"Research Projects using Network Simulation Tools in NS2,NS33,Omnet++,Qualnet,Opnet,Peersim,Mininet","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://networksimulationtools.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/networksimulationtools.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="cf7ic_style-css" href="ids_files/cf7ic-style.css" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="ids_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ekit-widget-styles-css" href="ids_files/widget-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ekit-widget-styles-pro-css" href="ids_files/widget-styles-pro.css" type="text/css" media="all">
+<link rel="stylesheet" id="ekit-responsive-css" href="ids_files/responsive.css" type="text/css" media="all">
+<script type="text/javascript" src="ids_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="ids_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="text/javascript" src="ids_files/google-analytics_analytics.js" id="google_gtagjs-js" async=""></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["networksimulationtools.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-T9CQJX7");
+/* ]]> */
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://networksimulationtools.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://networksimulationtools.com/wp-json/wp/v2/pages/3132"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://networksimulationtools.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.2">
+<link rel="shortlink" href="https://networksimulationtools.com/?p=3132">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://networksimulationtools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworksimulationtools.com%2Fintrusion-detection-system-projects%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://networksimulationtools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworksimulationtools.com%2Fintrusion-detection-system-projects%2F&amp;format=xml">
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-188518260-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<meta name="generator" content="Site Kit by Google 1.146.0"><meta name="generator" content="Elementor 3.27.5; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script type="text/javascript">var elementskit_module_parallax_url = "https://networksimulationtools.com/wp-content/plugins/elementskit/modules/parallax/";</script>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-KHCNTVDT' );
+			
+/* ]]> */
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<script src="ids_files/wp-emoji-release.min.js" defer="defer"></script></head>
+
+<body>
+    <header class="fixed-top px-4 pt-4 pb-0 bg-white shadow-sm">
+        <div class="row">
+            <div class="col-sm-2 col-6">
+                <a href="https://networksimulationtools.com/">
+                    <img src="ids_files/network-simulation-tools-logo.png" alt="" class="img-fluid mt-sm-2">
+                </a>
+            </div>
+            <div class="col-6 d-block d-sm-none">
+                <button id="mnuButton" class="navbar-toggler btn btn-ns" data-toggle="collapse" data-target="#mainMenu">
+                    <i class="fa fa-bars mr-2"></i> Menu
+                </button>
+            </div>
+            <div class="col-sm-10">
+                <nav class="navbar navbar-expand-lg mt-sm-2">
+                <div id="mainMenu" class="collapse navbar-collapse"><ul id="menu-header-menu" class="navbar-nav ml-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2707 nav-item"><a title="Home" href="http://networksimulationtools.com/" class="nav-link mx-sm-3">Home</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2846 nav-item"><a title="Network Projects" href="http://networksimulationtools.com/network-projects/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link mx-sm-3" id="menu-item-dropdown-2846">Network Projects</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-2846" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2847 nav-item"><a title="5G Projects" href="http://networksimulationtools.com/5g-network-projects/" class="dropdown-item">5G Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2848" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2848 nav-item"><a title="CRN Projects" href="http://networksimulationtools.com/crn-projects/" class="dropdown-item">CRN Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2849" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2849 nav-item"><a title="IOT Projects" href="http://networksimulationtools.com/internet-of-things-projects/" class="dropdown-item">IOT Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2850 nav-item"><a title="LTE Projects" href="http://networksimulationtools.com/lte-projects/" class="dropdown-item">LTE Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2851" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2851 nav-item"><a title="Manet Projects" href="http://networksimulationtools.com/manet-projects/" class="dropdown-item">Manet Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2852 nav-item"><a title="RPL Projects" href="http://networksimulationtools.com/rpl-projects/" class="dropdown-item">RPL Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2853 nav-item"><a title="SDN Projects" href="http://networksimulationtools.com/sdn-projects/" class="dropdown-item">SDN Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2854 nav-item"><a title="Vanet Projects" href="http://networksimulationtools.com/vanet-projects/" class="dropdown-item">Vanet Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2855 nav-item"><a title="Under Water Projects" href="http://networksimulationtools.com/underwater-sensor-network-projects/" class="dropdown-item">Under Water Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2856" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2856 nav-item"><a title="Wban Projects" href="http://networksimulationtools.com/wireless-body-area-network-projects/" class="dropdown-item">Wban Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2857 nav-item"><a title="Optical Projects" href="http://networksimulationtools.com/optical-network-projects/" class="dropdown-item">Optical Projects</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2858 nav-item"><a title="Network Security Projects" href="http://networksimulationtools.com/network-security-projects/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link mx-sm-3" id="menu-item-dropdown-2858">Network Security Projects</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-2858" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963 nav-item"><a title="Cyber Security Projects" href="https://networksimulationtools.com/cyber-security-projects/" class="dropdown-item">Cyber Security Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2860 nav-item"><a title="Mobile Security Projects" href="http://networksimulationtools.com/mobile-security-projects/" class="dropdown-item">Mobile Security Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2861 nav-item"><a title="Digital Forensic Projects" href="http://networksimulationtools.com/digital-forensics-projects/" class="dropdown-item">Digital Forensic Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2862 nav-item"><a title="Security Projects" href="http://networksimulationtools.com/security-projects/" class="dropdown-item">Security Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2863 nav-item"><a title="Network Attack Projects" href="http://networksimulationtools.com/network-attack-projects/" class="dropdown-item">Network Attack Projects</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2864 nav-item"><a title="Network Simulation Tools" href="http://networksimulationtools.com/network-simulation-tools-projects/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link mx-sm-3" id="menu-item-dropdown-2864">Network Simulation Tools</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-2864" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2865 nav-item"><a title="NS2 Projects" href="http://networksimulationtools.com/ns2-projects/" class="dropdown-item">NS2 Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866 nav-item"><a title="NS3 Projects" href="http://networksimulationtools.com/ns3-projects/" class="dropdown-item">NS3 Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867 nav-item"><a title="OMNeT++ Projects" href="http://networksimulationtools.com/omnet-projects/" class="dropdown-item">OMNeT++ Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2868 nav-item"><a title="OPNET Projects" href="http://networksimulationtools.com/opnet-projects/" class="dropdown-item">OPNET Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2869 nav-item"><a title="QUALNET Projects" href="http://networksimulationtools.com/qualnet-projects/" class="dropdown-item">QUALNET Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2870 nav-item"><a title="MININET Projects" href="http://networksimulationtools.com/mininet-projects/" class="dropdown-item">MININET Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871 nav-item"><a title="MATLAB Projects" href="http://networksimulationtools.com/matlab-projects/" class="dropdown-item">MATLAB Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2872 nav-item"><a title="LTESIM Projects" href="http://networksimulationtools.com/ltesim-projects/" class="dropdown-item">LTESIM Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2873" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2873 nav-item"><a title="COOJA SIMULATOR Projects" href="http://networksimulationtools.com/cooja-simulator-projects/" class="dropdown-item">COOJA SIMULATOR Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2874 nav-item"><a title="CONTIKI OS Projects" href="http://networksimulationtools.com/contiki-os-projects/" class="dropdown-item">CONTIKI OS Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2875" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2875 nav-item"><a title="GNS3 Projects" href="http://networksimulationtools.com/gns3-projects/" class="dropdown-item">GNS3 Projects</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2876 nav-item"><a title="NETSIM Projects" href="http://networksimulationtools.com/netsim-projects/" class="dropdown-item">NETSIM Projects</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706 nav-item"><a title="Contact Us" href="https://networksimulationtools.com/contact-us/" class="nav-link mx-sm-3">Contact Us</a></li>
+</ul></div>                </nav>
+            </div>
+        </div>
+    </header>    <div class="page-title">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="text-white">Intrusion Detection System Projects</h1>
+            </div>
+            <div class="col-sm-6">
+                <p class="text-white text-right">
+                    <a href="https://networksimulationtools.com/intrusion-detection-system-projects/index.html" class="text-white mr-2">
+                        <i class="fa fa-home"></i>
+                    </a>
+                    <i class="fa fa-angle-right mr-2"></i>
+                    Intrusion Detection System Projects                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 px-sm-4 py-5">
+        <div class="row">
+            <div class="col-sm-8">
+                
+<p>Intrusion Detection System Projects are always palatable to target 
+attackers in the whole system. An intrusion detection system is a 
+security scheme that purpose is to find malicious activity from false 
+alarms. The <a href="https://networksimulationtools.com/intrusion-detection-system-projects/" target="_blank" rel="noreferrer noopener">intrusion detection system</a>
+ is mean to IDS. There are three types of intruders, such as 
+Clandestine, Masquerader, and also Misfeasor. Certain behaviors of 
+intruders are,&nbsp;&nbsp;</p>
+
+
+
+<ul class="wp-block-list"><li>Passive Eavesdropping&nbsp;</li><li>Active Interfering&nbsp;</li><li>Secret Information Leakage</li><li>Data Tampering</li><li>Impersonation&nbsp;</li><li>Message Replay and Distortion</li><li>DoS and also DDoS&nbsp;</li></ul>
+
+
+
+<p>&nbsp;&nbsp; Right now, IDS is a stand that acts as a security 
+solution. Thus, it connects the security researchers to the IDS. Also, 
+this field is a classic one among all stream of students. Before knowing
+ how to start a project, it’s needed to check out the IDS classes at 
+first.&nbsp;</p>
+
+
+
+<h4 class="wp-block-heading"><strong>INTRUSION DETECTION CATEGORY&nbsp;</strong></h4>
+
+
+
+<h6 class="wp-block-heading">&nbsp;<strong>Examined Actions&nbsp;</strong></h6>
+
+
+
+<ul class="wp-block-list"><li>Network Intrusion Detection System (NIDS)</li><li>Host Intrusion Detection System (HIDS)</li></ul>
+
+
+
+<h6 class="wp-block-heading"><strong>Intrusion Detection Methods&nbsp;</strong></h6>
+
+
+
+<ul class="wp-block-list"><li>Signature-based&nbsp;</li><li>Anomaly</li><li>Hybrid Anomaly and also Signature&nbsp;</li></ul>
+
+
+
+<p>&nbsp;&nbsp; In the context of IDS, quite a lot of fields are working
+ early and now. For instance, a wireless network is a field that needs 
+IDS while transmitting packets from one place to another. In this case, a
+ deep packet inspection (DPI) method is now useful to look at important 
+features of the packet stream.&nbsp;</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img fetchpriority="high" decoding="async" src="ids_files/Intrusion-Detection-System-Projects.png" alt="Implementing hybrid intrusion detection system thesis" class="wp-image-3133" width="720" height="425" srcset="ids_files/Intrusion-Detection-System-Projects.png 720w, ids_files/Intrusion-Detection-System-Projects-300x177.png 300w" sizes="(max-width: 720px) 100vw, 720px"></figure></div>
+
+
+
+<h4 class="wp-block-heading"><strong>IDS FIELDS: MAIN ON THE WHOLE&nbsp;</strong></h4>
+
+
+
+<ul class="wp-block-list"><li><a href="https://networksimulationtools.com/mobile-edge-computing-lte-projects/" target="_blank" rel="noreferrer noopener">Mobile Edge Computing</a>&nbsp;</li><li>Fog and also Cloud Computing&nbsp;</li><li>Grid and Big Data Servers&nbsp;</li><li>Mobile and Vehicular Ad Hoc Networks&nbsp;</li><li>Software-Defined Networks&nbsp;</li></ul>
+
+
+
+<h4 class="wp-block-heading"><strong>RESEARCH ISSUES IN IDS&nbsp;</strong></h4>
+
+
+
+<p>&nbsp;&nbsp; A lack of security leads to more issues. Often, there 
+are various issues unsolved in IDS. It is all the time hard to avoid 
+those issues of it. With attention to security, it must avoid as much as
+ possible when using any method.&nbsp;</p>
+
+
+
+<ul class="wp-block-list"><li>Learn from Large Amounts of Data&nbsp;</li><li>False Positive and also Negative Identification&nbsp;</li><li>Staffing of New Attack&nbsp;</li><li>Incomplete Attack Coverage&nbsp;</li></ul>
+
+
+
+<p>&nbsp;&nbsp; Another key point to work on the IDS project is a 
+method. We have a new set of ways to hunt against attackers. In other 
+words, machine learning is a fast way to detect intrusions. We list out 
+such fast and latest methods for you in the following with <a href="https://phdtopic.com/phd-guidance-in-pattern-analysis-and-machine-intelligence/" target="_blank" rel="noreferrer noopener">PhD guidance in pattern analysis and machine intelligence</a>. To implement your IDS projects, you can prefer any method.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Supervised</strong></h4>
+
+
+
+<ul class="wp-block-list"><li>Classification&nbsp;<ul><li>K-Nearest Neighbor</li></ul><ul><li>Support Vector Machine&nbsp;</li></ul><ul><li>Naïve Bayes Algorithm</li></ul></li><li>Regression&nbsp;<ul><li>Logistic Regression</li></ul><ul><li>Decision Tree Algorithm</li></ul><ul><li>Linear Regression</li></ul></li></ul>
+
+
+
+<h4 class="wp-block-heading"><strong>Unsupervised&nbsp;</strong></h4>
+
+
+
+<ul class="wp-block-list"><li>Dimensionality Reduction&nbsp;<ul><li>Principal Component Analysis (PCA)</li></ul><ul><li>Linear Discriminant Analysis (LDA)</li></ul><ul><li>Intelligent Component Analysis (ICA)</li></ul></li><li>Clustering&nbsp;<ul><li>K-means&nbsp;</li></ul><ul><li>Mean shift&nbsp;</li></ul><ul><li>K-Medoids&nbsp;</li></ul></li></ul>
+
+
+
+<h4 class="wp-block-heading"><strong>Deep Reinforcement</strong></h4>
+
+
+
+<ul class="wp-block-list"><li>Q-learning&nbsp;</li><li>SARSA</li><li>A3C</li><li>DQN</li><li>TD3</li></ul>
+
+
+
+<p>&nbsp;&nbsp; Along with the above methods, it is open to learning all
+ other IDS methods. For that reason, we introduce all such methods for 
+you below. At the same time, we handle any recent topics or methods in 
+this IDS area.&nbsp;</p>
+
+
+
+<ul class="wp-block-list"><li><a href="https://networksimulationtools.com/cryptography-network-security-projects/" target="_blank" rel="noreferrer noopener">Cryptography</a>&nbsp;</li><li>Statistical Approaches&nbsp;</li><li>Pseudorandom Function&nbsp;</li><li><a href="https://networksimulationtools.com/hashing-algorithm-projects/" target="_blank" rel="noreferrer noopener">Hashing Algorithms</a>&nbsp;</li><li>And also many more</li></ul>
+
+
+
+<h4 class="wp-block-heading"><strong>Intrusion Detection System Projects: Significant Constraints&nbsp;</strong></h4>
+
+
+
+<p>&nbsp;&nbsp; In general, creativity always limits by constraints. So 
+the visions to be clear before work it. On the other hand, it is hard to
+ be fully keeping an eye on the constraints of IDS. Effective IDS must 
+meet the following constraints.&nbsp;&nbsp;</p>
+
+
+
+<ul class="wp-block-list"><li>High accuracy&nbsp;</li><li>Great completeness</li><li>High fault tolerance&nbsp;</li><li>Correct timeliness</li><li>High scalability</li></ul>
+
+
+
+<p>&nbsp;&nbsp; We foresee the main aspects of IDS and its need in the upcoming years. All in all, <a href="https://networksimulationtools.com/intrusion-detection-system-projects/" target="_blank" rel="noreferrer noopener">intrusion detection system</a> projects are a great chance for final year students and research scholars.</p>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card shadow">
+                    <div class="card-header text-center">Live Tasks</div>
+                    <div class="card-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Technology</th>
+                                    <th>Ph.D</th>
+                                    <th>MS</th>
+                                    <th>M.Tech</th>
+                                </tr>
+                                <tr>
+                                    <td>NS2</td>
+                                    <td>75</td>
+                                    <td>117</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>NS3</td>
+                                    <td>98</td>
+                                    <td>119</td>
+                                    <td>206</td>
+                                </tr>
+                                <tr>
+                                    <td>OMNET++</td>
+                                    <td>103</td>
+                                    <td>95</td>
+                                    <td>87</td>
+                                </tr>
+                                <tr>
+                                    <td>OPNET</td>
+                                    <td>36</td>
+                                    <td>64</td>
+                                    <td>89</td>
+                                </tr>
+                                <tr>
+                                    <td>QULANET</td>
+                                    <td>30</td>
+                                    <td>76</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>MININET</td>
+                                    <td>71</td>
+                                    <td>62</td>
+                                    <td>74</td>
+                                </tr>
+                                <tr>
+                                    <td>MATLAB</td>
+                                    <td>96</td>
+                                    <td>185</td>
+                                    <td>180</td>
+                                </tr>
+                                <tr>
+                                    <td>LTESIM</td>
+                                    <td>38</td>
+                                    <td>32</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>COOJA SIMULATOR</td>
+                                    <td>35</td>
+                                    <td>67</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>CONTIKI OS</td>
+                                    <td>42</td>
+                                    <td>36</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>GNS3</td>
+                                    <td>35</td>
+                                    <td>89</td>
+                                    <td>14</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>NETSIM </td>
+                                    <td>35</td>
+                                    <td>11</td>
+                                    <td>21</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>EVE-NG</td>
+                                    <td>4</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>TRANS</td>
+                                    <td>9</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>PEERSIM</td>
+                                    <td>8</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>GLOMOSIM</td>
+                                    <td>6</td>
+                                    <td>10</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>RTOOL</td>
+                                    <td>13</td>
+                                    <td>15</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>KATHARA SHADOW</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>VNX and VNUML</td>
+                                    <td>8</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>WISTAR</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>CNET</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>ESCAPE</td>
+                                    <td>8</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>NETMIRAGE</td>
+                                    <td>7</td>
+                                    <td>11</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>BOSON NETSIM</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>VIRL</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>CISCO PACKET TRACER</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>SWAN</td>
+                                    <td>9</td>
+                                    <td>19</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>JAVASIM</td>
+                                    <td>40</td>
+                                    <td>68</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>SSFNET</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>TOSSIM</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>PSIM</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>PETRI NET</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>ONESIM</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>OPTISYSTEM</td>
+                                    <td>32</td>
+                                    <td>64</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>DIVERT</td>
+                                    <td>4</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>TINY OS</td>
+                                    <td>19</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>TRANS</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>OPENPANA</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>SECURE CRT</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>EXTENDSIM</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>CONSELF</td>
+                                    <td>7</td>
+                                    <td>19</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>ARENA</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>VENSIM</td>
+                                    <td>8</td>
+                                    <td>10</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>MARIONNET</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>NETKIT</td>
+                                    <td>6</td>
+                                    <td>8</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>GEOIP</td>
+                                    <td>9</td>
+                                    <td>17</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>REAL</td>
+                                    <td>7</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>NEST</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>PTOLEMY</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 px-sm-4 py-5" style="background-image: url('https://networksimulationtools.com/wp-content/themes/network-simulation-tools/images/parallax.jpg'); background-size: cover;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="text-white card-header text-center mb-3">Related Pages</h3>
+                
+                    <div class="related_page text-white text-left">
+                        <p><a href="https://networksimulationtools.com/crn-projects/" target="_blank" rel="noopener">Crn Projects</a></p>
+<p><a href="https://networksimulationtools.com/digital-forensics-projects/" target="_blank" rel="noopener">Digital Forensics Projects</a></p>
+<p><a href="https://networksimulationtools.com/game-theory-network-security-projects/" target="_blank" rel="noopener">Game Theory Network Security Projects</a></p>
+<p><a href="https://networksimulationtools.com/crn-spectrum-sensing-projects/" target="_blank" rel="noopener">Crn Spectrum Sensing Projects</a></p>
+<p><a href="https://networksimulationtools.com/exata-network-emulator-projects/" target="_blank" rel="noopener">Exata Network Emulator Projects</a></p>
+<p><a href="https://networksimulationtools.com/cyber-security-projects/" target="_blank" rel="noopener">Cyber Security Projects</a></p>
+<p><a href="https://networksimulationtools.com/formjacking-attack-network-projects/" target="_blank" rel="noopener">Formjacking Attack Network Projects</a></p>
+<p><a href="https://networksimulationtools.com/cryptography-network-security-projects/" target="_blank" rel="noopener">Cryptography Network Security Projects</a></p>
+<p><a href="https://networksimulationtools.com/digital-signature-algorithm-projects/" target="_blank" rel="noopener">Digital Signature Algorithm Projects</a></p>
+<p><a href="https://networksimulationtools.com/flying-ad-hoc-network-projects/" target="_blank" rel="noopener">Flying Ad Hoc Network Projects</a></p>
+<p><a href="https://networksimulationtools.com/cryptojacking-attacks-network-projects/" target="_blank" rel="noopener">Cryptojacking Attacks Network Projects</a></p>
+<p><a href="https://networksimulationtools.com/dos-attack-network-projects/" target="_blank" rel="noopener">Dos Attack Network Projects</a></p>
+<p><a href="https://networksimulationtools.com/fog-radio-access-network-projects/" target="_blank" rel="noopener">Fog Radio Access Network Projects</a></p>
+<p><a href="https://networksimulationtools.com/game-theory-network-routing-projects/" target="_blank" rel="noopener">Game Theory Network Routing Projects</a></p>
+<p><a href="https://networksimulationtools.com/eavesdropping-attack-network-projects/" target="_blank" rel="noopener">Eavesdropping Attack Network Projects</a></p>                    </div>
+            </div>
+            <div class="col-sm-8 border-left border-white">
+                <h3 class="text-white text-center mb-3">Workflow</h3>
+                <div id="workflowSlide" class="carousel slide w-100 rounded" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#workflowSlide" data-slide-to="0" class="bg-light-indicator">
+                        </li>
+                        <li data-target="#workflowSlide" data-slide-to="1" class="bg-light-indicator"></li>
+                        <li data-target="#workflowSlide" data-slide-to="2" class="bg-light-indicator active"></li>
+                        <li data-target="#workflowSlide" data-slide-to="3" class="bg-light-indicator"></li>
+                        <li data-target="#workflowSlide" data-slide-to="4" class="bg-light-indicator"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item text-center">
+                            <img src="ids_files/workflow-proposal.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="ids_files/workflow-paper-writting.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="carousel-item text-center active">
+                            <img src="ids_files/workflow-paper-publishing.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="ids_files/workflow-phd-thesis.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="ids_files/workflow-services.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Youtube_subscribe" class="mx-sm-5 rounded shadow my-5">
+        <div class="row">
+            <div class="col-sm-1">
+                <i class="fa fa-youtube bg-ns1 text-white rounded-circle mx-3"></i>
+            </div>
+            <div class="col-sm-9">
+                <h3 class="text-white">YouTube Channel</h3>
+                <p class="text-white">Unlimited Network Simulation Results available here.</p>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.youtube.com/channel/UCVriWvEKeBleQ6Le2pwTK3Q/" target="_blank" class="btn btn-ns1 mt-3">
+                    Subscribe
+                    <i class="fa fa-caret-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<style>ul.small li{margin:0px;font-size:14px}</style> <div class="container-fluid"><div class="row"><div class="col-sm-12"><div class="text-white p-3 rounded">
+<h4 class="text-center d-flex flex-column align-items-center"> Related Topics <i class="fa fa-chevron-down mt-1"></i></h4>
+<div id="extraContent" class="mt-3">
+    <div class="row row-cols-1 row-cols-md-4"><div class="col">
+        <ul class="small">  
+            <li><a href="https://networksimulationtools.com/iot-network-simulator/">Iot Network Simulator</a></li>
+            <li><a href="https://networksimulationtools.com/network-topology-projects/">Network Topology Projects</a></li>
+            <li><a href="https://networksimulationtools.com/computer-network-project-topics/">Computer Network Project</a></li>
+            <li><a href="https://networksimulationtools.com/cyber-security-iot-projects/">Cyber Security Iot Projects</a></li>
+            <li><a href="https://networksimulationtools.com/hot-research-topics-in-deep-learning/">Deep Learning Topics</a></li>
+            <li><a href="https://networksimulationtools.com/sdn-projects/">Sdn Projects</a></li>
+            <li><a href="https://networksimulationtools.com/latest-phd-topics/">Phd Topics</a></li>
+            <li><a href="https://networksimulationtools.com/project-topics-on-gis-and-remote-sensing/">Gis Remote Sensing Projects</a></li>
+            <li><a href="https://networksimulationtools.com/networking-projects/">Networking Projects</a></li>
+            <li><a href="https://networksimulationtools.com/intrusion-detection-system-projects/">Intrusion Detection Projects</a></li>
+            <li><a href="https://networksimulationtools.com/rpl-iot-projects/">Rpl Iot Projects</a></li>
+            <li><a href="https://networksimulationtools.com/networking-topics-for-projects/">Networking Projects</a></li>
+            <li><a href="https://networksimulationtools.com/cyber-crime-dissertation/">Cyber Crime Dissertation</a></li>
+            <li><a href="https://networksimulationtools.com/research-topics-for-artificial-intelligence/">Artificial Intelligence Projects</a></li>
+            <li><a href="https://networksimulationtools.com/ml-capstone-project/">Ml Capstone Projects</a></li>
+            <li><a href="https://networksimulationtools.com/network-security-projects/">Network Security Projects</a></li>
+            <li><a href="https://networksimulationtools.com/cyber-security-phd-topics/">Cyber-Security Projects</a></li>
+            <li><a href="https://networksimulationtools.com/digital-image-processing-research-topics/">Digital Image Processing Projects</a></li>
+            <li><a href="https://networksimulationtools.com/research-topic-for-ict-students/">Ict Research Topics</a></li>
+            
+        </ul>
+</div>
+<div class="col">
+    <ul class="small"> 
+ 
+        <li><a href="https://networksimulationtools.com/capstone-project-for-computer-engineering/">Capstone Computer Engineering Projects</a></li>
+        <li><a href="https://networksimulationtools.com/network-security-thesis-topics/">Network Security Thesis Topics</a></li>
+        <li><a href="https://networksimulationtools.com/computer-network-simulation-projects/">Network Simulation Projects</a></li>
+        <li><a href="https://networksimulationtools.com/thesis-topics-in-computer-networking/">Computer Networking Projects</a></li>
+        <li><a href="https://networksimulationtools.com/cyber-security-projects/">Cyber Security Thesis Topics</a></li>
+        <li><a href="https://networksimulationtools.com/vanet-projects/">Vanet Projects</a></li>
+        <li><a href="https://networksimulationtools.com/malware-detection-using-machine-learning-projects/">Malware Detection Projects</a></li>
+        <li><a href="https://networksimulationtools.com/wireless-communication-projects/">Wireless Communication Projects</a></li>
+        <li><a href="https://networksimulationtools.com/contiki-os-projects/">Contiki Os Projects</a></li>
+        <li><a href="https://networksimulationtools.com/cellular-network-projects/">Cellular Network Projects</a></li>
+        <li><a href="https://networksimulationtools.com/lifi-projects/">Lifi Projects</a></li>
+        <li><a href="https://networksimulationtools.com/ad-hoc-projects/">Ad Hoc Projects</a></li>
+        <li><a href="https://networksimulationtools.com/internet-of-things-projects/">Internet Of Things Projects</a></li>
+        <li><a href="https://networksimulationtools.com/delay-tolerant-network-projects/">Delay Tolerant Network Projects</a></li>
+        <li><a href="https://networksimulationtools.com/network-attack-projects/">Network Attack Projects</a></li>
+        <li><a href="https://networksimulationtools.com/heterogeneous-network-projects/">Heterogeneous Network Projects</a></li>
+        <li><a href="https://networksimulationtools.com/ns3-projects/">Ns3 Projects</a></li>
+        <li><a href="https://networksimulationtools.com/manet-projects/">Manet Projects</a></li>
+        <li><a href="https://networksimulationtools.com/biomedical-engineering-research-projects/">Biomedical Engineering Projects</a></li>
+                   
+    </ul>
+</div>
+<div class="col">
+    <ul class="small">
+        <li><a href="https://networksimulationtools.com/network-simulator-tools/">Network Simulator Tools</a></li>
+        <li><a href="https://networksimulationtools.com/d2d-communication-projects/">D2D Communication Projects</a></li>
+        <li><a href="https://networksimulationtools.com/phd-thesis-topics/">Phd Thesis Topics</a></li>
+        <li><a href="https://networksimulationtools.com/artificial-intelligence-in-cyber-security-projects/">Ai Cyber Security Projects</a></li>
+        <li><a href="https://networksimulationtools.com/v2x-communication-projects/">V2X Communication Projects</a></li>
+        <li><a href="https://networksimulationtools.com/big-data-projects/">Big Data Projects</a></li>
+        <li><a href="https://networksimulationtools.com/mobile-computing-projects/">Mobile Computing Projects</a></li>
+        <li><a href="https://networksimulationtools.com/ddos-attack-network-projects/">Ddos Attack Network Projects</a></li>
+        <li><a href="https://networksimulationtools.com/wban-iot-projects/">Wban Iot Project</a></li>
+        <li><a href="https://networksimulationtools.com/cloud-computing-project-ideas/">Cloud Computing Project Ideas</a></li>
+        <li><a href="https://networksimulationtools.com/named-data-networking-projects/">Named Data Networking Projects</a></li>
+        <li><a href="https://networksimulationtools.com/mobile-edge-computing-lte-projects/">Edge Computing Projects</a></li>
+        <li><a href="https://networksimulationtools.com/phd-topics-in-computer-applications/">Computer Application Projects</a></li>
+        <li><a href="https://networksimulationtools.com/wireless-sensor-projects/">Wireless Sensor Project</a></li>
+        <li><a href="https://networksimulationtools.com/research-proposal-writing-help/">Research Proposal Writing-Help</a></li>
+        <li><a href="https://networksimulationtools.com/satellite-communication-simulator/">Satellite Communication Simulator</a></li>
+        <li><a href="https://networksimulationtools.com/digital-image-processing-projects-for-final-year-ece/">Ece Projects</a></li>
+        <li><a href="https://networksimulationtools.com/blockchain-technology-projects/">Blockchain Technology Projects</a></li>
+        <li><a href="https://networksimulationtools.com/latest-project-topics-for-computer-science/">Computer Science Projects</a></li>
+             
+    </ul>
+    </div>
+    <div class="col">
+    <ul class="small">  
+        <li><a href="https://networksimulationtools.com/final-year-project-ideas-computer-science-artificial-intelligence/">Ai Cse Projects</a></li>
+        <li><a href="https://networksimulationtools.com/cyber-security-projects-for-final-year/">Cyber Security Thesis</a></li>
+        <li><a href="https://networksimulationtools.com/cyber-security-machine-learning-projects/"> Cyber Security Ml Projects</a></li>
+        <li><a href="https://networksimulationtools.com/research-proposal-topics-in-information-technology/">Research Proposal Topics</a></li>
+        <li><a href="https://networksimulationtools.com/cyber-security-awareness-topics/">Cyber Security Awareness Topics</a></li>
+        <li><a href="https://networksimulationtools.com/project-topics-for-cyber-security/">Cyber Security Topics </a></li>
+        <li><a href="https://networksimulationtools.com/iot-undergraduate-projects/">Iot Projects</a></li>
+        <li><a href="https://networksimulationtools.com/iot-bachelor-thesis/">Iot Thesis</a></li>
+        <li><a href="https://networksimulationtools.com/good-topics-for-research-paper-in-computer-science/">Computer Science Thesis </a></li>
+        <li><a href="https://networksimulationtools.com/rpl-projects/">Rpl Projects</a></li>
+        <li><a href="https://networksimulationtools.com/image-processing-thesis-topics/">Dip Projects</a></li>
+        <li><a href="https://networksimulationtools.com/cyber-security-research-paper-topics/">Cyber Security Dissertation</a></li>
+        <li><a href="https://networksimulationtools.com/master-thesis-cyber-security/">Cyber Security Ms Thesis</a></li>
+        <li><a href="https://networksimulationtools.com/cloud-computing-projects-for-final-year-students/">Cloud Computing Thesis </a></li>
+        <li><a href="https://networksimulationtools.com/biomedical-image-processing-research-topics/">Biomedical Image Processing Projects </a></li>
+        <li><a href="https://networksimulationtools.com/networking-security-projects/">Networking Security Projects</a></li>
+        <li><a href="https://networksimulationtools.com/latest-research-topics-in-deep-learning/">Deep Learning Research Projects</a></li>
+        <li><a href="https://networksimulationtools.com/cloud-computing-simulator/">Cloud Computing Simulator</a></li>
+        <li><a href="https://networksimulationtools.com/latest-project-topics-for-information-technology/">Information Technology Project Topics</a></li>
+         </ul>
+</div>
+</div></div></div></div></div></div>
+
+
+<script>document.getElementById("toggleContent").addEventListener("click", function() { var content = document.getElementById("extraContent"); content.style.display = content.style.display === "none" ? "block" : "none"; });</script>
+
+<footer class="mt-5 p-4" style="background-image: url('https://networksimulationtools.com/wp-content/themes/network-simulation-tools/images/parallax.jpg'); background-size: cover;">
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="https://networksimulationtools.com/">
+                    <img src="ids_files/network-simulation-tools-logo-white.png" alt="" class="w-50 img-fluid mb-2">
+                </a>
+                <p class="text-white">Network Simulation aids you in communication technologies and emerging
+                    networks. We always create a network with real time Standards and Protocols using special
+                    modules and packages that adapts a simulator.</p>
+            </div>
+            <div class="col-sm-2">
+                <h3 class="text-ns1 py-4">Contact</h3>
+                <p class="mb-2"><a href="http://networksimulationtools.com/help-faq/" class="text-white">Help &amp; FAQ</a></p>
+                <p class="mb-2"><a href="https://networksimulationtools.com/network-research-topics/" class="text-white">Subjects</a></p>
+                <p class="mb-2"><a href="https://networksimulationtools.com/network-simulator-tools/" class="text-white">Tools</a></p>
+                <p class="mb-2"><a href="http://networksimulationtools.com/contact-us/" class="text-white">Contact Us</a></p>
+            </div>
+            <div class="col-sm-2">
+                <h3 class="text-ns1 py-4">Pages</h3>
+                <p class="mb-2"><a href="http://networksimulationtools.com/phd-guidance/" class="text-white">PhD Guidance</a></p>
+                <p class="mb-2"><a href="http://networksimulationtools.com/ms-guidance/" class="text-white">MS Guidance</a></p>
+                <p class="mb-2"><a href="http://networksimulationtools.com/assignment-help/" class="text-white">Assignment Help</a></p>
+                <p class="mb-2"><a href="https://networksimulationtools.com/homework-help/" class="text-white">Homework Help</a></p>
+				
+				
+
+            </div>
+            <div class="col-sm-2">
+                <h3 class="text-ns1 py-4">Information</h3>
+                <p class="mb-2"><a href="http://networksimulationtools.com/country/" class="text-white">Country</a></p>
+                <p class="mb-2"><a href="http://networksimulationtools.com/payment/" class="text-white">Payment</a></p>
+                <p class="mb-2"><a href="http://networksimulationtools.com/workflow/" class="text-white">Workflow</a></p>
+                <p class="mb-2"><a href="https://networksimulationtools.com/network-simulator/" class="text-white">Parameter</a></p>
+            </div>
+			<div style="
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+">
+				<p class="mb-2"><a href="https://networksimulationtools.com/academic-paper-writing-services/" class="text-white">Academic paper writing services </a></p>
+			</div>
+        </div>
+        <div class="row mt-5 mb-2">
+            <div class="col-sm-6">
+                <p class="text-center text-sm-left">
+                    <i class="fa fa-phone sociallink mr-2"></i>
+                    <a href="tell:+919444847435" class="text-white">+91 94448 47435</a>
+                    <i class="fa fa-envelope sociallink mr-2 ml-sm-3"></i>
+                    <a href="mailto://gmail.com" class="text-white">networksimulationtool@gmail.com</a>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <form method="get" id="searchform" action="https://networksimulationtools.com/" role="search">
+                <div class="input-group mb-3">
+                    <input type="text" name="s" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-ns3" type="submit" id="searchsubmit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-white text-center text-sm-right">
+                    <a href="https://www.facebook.com/Network-simulation-tools-907828132640164" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/netsimprojects" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://in.pinterest.com/networksimtools/" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCVriWvEKeBleQ6Le2pwTK3Q/videos" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="https://vimeo.com/networksimulationtools" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-vimeo"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/network-simulator-tools-1536481b4/" class="sociallink mr-sm-2" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <p class="text-center text-white">Copyright 2020 - All Rights Reserved</p>
+    </footer>
+
+
+    <link href="ids_files/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="ids_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="ids_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="ids_files/style.css">
+    <script src="ids_files/jquery.min_002.js"></script>
+    <script src="ids_files/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="ids_files/jquery.particleground.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#menu-header-menu .nav-link").addClass("mx-sm-3");
+            $("#menu-header-menu .nav-link").removeClass("dropdown-toggle");      
+            $("carousel").addClass("slide").addClass("carousel-fade");    
+			
+			$(".schema-how-to-step-text img").removeAttr("width");
+			$(".schema-how-to-step-text img").addClass("w-100 img-fluid");
+
+            $("#Youtube_subscribe").hover(function () {
+                $("#Youtube_subscribe").removeClass("mx-sm-5");
+            }, function () {
+                $("#Youtube_subscribe").addClass("mx-sm-5");
+            });
+            $('#slider').particleground({
+                minSpeedX: 0.1,
+                maxSpeedX: 0.7,
+                minSpeedY: 0.1,
+                maxSpeedY: 0.7,
+                directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+                directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+                density: 10000, // How many particles will be generated: one particle every n pixels
+                dotColor: 'rgba(255,255,255,0.5)',
+                lineColor: 'rgba(255,255,255,0.5)',
+                particleRadius: 7, // Dot size
+                lineWidth: 1,
+                curvedLines: false,
+                proximity: 100, // How close two dots need to be before they join
+                parallax: true,
+                parallaxMultiplier: 5, // The lower the number, the more extreme the parallax effect
+                onInit: function () { },
+                onDestroy: function () { }
+            });
+        });
+        $(".navbar .dropdown > a").click(function () {
+            var width = $("body").width();
+            if (width > 768) {
+                location.href = this.href;
+            }
+        });
+        function scrollToolsLeft() {
+            $("#toolsTable").scrollLeft($("#toolsTable").scrollLeft() - 10);
+        }
+        function scrollToolsRight() {
+            $("#toolsTable").scrollLeft($("#toolsTable").scrollLeft() + 10);
+        }
+
+        $(".navbar .dropdown > a").click(function() {
+            location.href = this.href;
+        });
+
+        $("#faq").on('show.bs.collapse', function(e){
+            var id=$(e.target).attr('id');
+            id=id.replace("answer","question");
+            $("#"+id).addClass("active");
+            $("#"+id+" .fa").removeClass("fa-angle-right");
+            $("#"+id+" .fa").addClass("fa-angle-down");
+        });
+
+        $("#faq").on('hide.bs.collapse', function(e){
+            var id=$(e.target).attr('id');
+            id=id.replace("answer","question");
+            $("#"+id).removeClass("active");
+            $("#"+id+" .fa").removeClass("fa-angle-down");
+            $("#"+id+" .fa").addClass("fa-angle-right");
+        });        
+    </script>
+    			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+					<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHCNTVDT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<script type="text/javascript" src="ids_files/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="ids_files/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="ids_files/index.js" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/networksimulationtools.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="ids_files/index_003.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="ids_files/frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+<script type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+/* <![CDATA[ */
+		var elementskit = {
+			resturl: 'https://networksimulationtools.com/wp-json/elementskit/v1/',
+		}
+
+		
+/* ]]> */
+</script>
+<script type="text/javascript" src="ids_files/widget-scripts.js" id="ekit-widget-scripts-js"></script>
+<script type="text/javascript" src="ids_files/api.js" id="google-recaptcha-js"></script>
+<script type="text/javascript" src="ids_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-before">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {
+    "sitekey": "6LfkCNYZAAAAAJxBxNk1TPuMZgeZnkqt2redwllm",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="ids_files/index_002.js" id="wpcf7-recaptcha-js"></script>
+
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-cm9w405d5wdz" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="ids_files/anchor.htm"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">03AFcWeA5shHFRVItE5W96Dcg0iyc3NkNwpLoiorBR56hUa3MZwy3SyMfvQoIv_2uXqqz_ChmWH27oU8j8wG3wMVchhRWYw9-9Mrj6_zM7u77AjvsntLKBzzaunSmRxewSgvisDbN9jggY7XDhpuaIugDrsZjWdQjSDCC1Negu37yQUCGEu81jKxd5S9bkx9u4wxJ-
+xGpZrXkezTxYzPIKa7Gpeujirh6-BcztpRrX9pHtS9lTJ9_1LRw-SxHzbOA-
+mV2k0XXOFQpH4kD8OJ_bSygio6h3hCmeIvBfb2OO_SgA9TsnONaa-
+HOasB7GFHaPeqVDv1b1oFKD8_vPnwNOW36hr7DnO3k8kaXE08XxSP2dlBx5fk-7OdQ-
+IsaS2IVEs8nGs3mMhTDa-
+ZxfzuuiGqLkBT5IfJqMJh_uM1YAwJuG46px2nS_gY_1Nsf2_GJSuaGj1klNw7cuE5HkEaWKtNRWaLPs4DIoOlpYx64pVGbmpQo_d-
+xb2fZE236L68E3Q_Ji6xe1EFu3vrz_yW29VK4KQ61UHphSCMWTP0uthxuR5F0OGrYDymWWQhg6br2Yoqa37p5aB9PleiWHP40NA6Yg6R_e4rXZB0cOR8Ncn0kC8FbHp5ZKr4dQxX-6MMfRXkjzlzHTAe5LG2771TpAV7zwTqFBrdLPhnHgCKgi5LTQm5Ll1jnRxjkcbFGW2vqIXzRoiB2lLqc6gxxFXvKatkf5DdKkHOZH0Gawi0q0HIfDJLVi6KRxJt3GBIZMxk_GKuuLjN3StHklyBNirQCbxnoqUxn5b8O3nNhTaFprmg9ob-
+mwOWXs_6ClJ5njHkRhF3_cE5JdEMAAGY5bgAtxSKXalygVq8VGIJwyxkxC_EIpIzyKeosSOmXd34q2DlmeeOq7VZclqbWGhOtUdLdeqgCRvowtlrnaYr5Zv1_yZ1cezeDKpBtrGxNvjxA7NUMGYn02ms1kOq-
+X6fmHUNLcOYoOLcayJ7ThJJXrznfmaSo2x_8lPbR9yV3qb290ZJMMwoTcNblRWTpR</textarea></div><iframe style="display: none;"></iframe></div></body></html>

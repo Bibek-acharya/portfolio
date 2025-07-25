@@ -269,7 +269,7 @@ export default function Portfolio() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
                       <div className="text-center">
                         <ImageIcon className="h-16 w-16 text-gray-600 mx-auto mb-4" />
-                        <p className="text-gray-500 text-sm">Project Screenshot</p>
+                        <p className="text-gray-500 text-sm">Project Screenshots</p>
                         <p className="text-gray-600 text-xs mt-2">Add {project.image?.split('/').pop()} to display image</p>
                       </div>
                     </div>
